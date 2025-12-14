@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body{ 
+margin: 0px; 
+} 
+main{ 
+margin-left: 20px; 
+margin-right: 20px; 
+} 
+h1{ 
+text-align: center; 
+} 
+.navbar ul{ 
+list-style-type: none; 
+background-color: hsl(0, 0%, 25%); 
+padding: 0px; 
+margin: 0px; 
+overflow: hidden; 
+} 
+.navbar a{ 
+color: white; 
+text-decoration: none; 
+padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+.navbar li{
+    float: left;
+}
+</style>
+<body>
+
+        <h1>Welcome to Evangelista School of Wisdom</h1>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Calculate.html">Grade Calculator</a></li>
+            <li><a href="Product.html">Clubs</a></li>
+        </ul>
+    </nav>
+
+       <div class="container">
+        <h1>School Club Information</h1>
+
+        <div class="club-form">
+            <label for="clubs">Select a club:</label>
+            <select id="clubs">
+                <option>Robotics Club</option>
+                <option>Science Club</option>
+                <option>Art Club</option>
+                <option>Music Club</option>
+            </select>
+            <button onclick="showClubInfo()">Show Club Information</button>
+        </div>
+
+        <div class="club-info" id="club-info">
+
+        </div>
+    
+</body>
+</html>

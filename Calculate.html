@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>SW2</title>
+</head>
+ <style>
+        body{ 
+margin: 0px; 
+} 
+main{ 
+margin-left: 20px; 
+margin-right: 20px; 
+} 
+h1{ 
+text-align: center; 
+} 
+.navbar ul{ 
+list-style-type: none; 
+background-color: hsl(0, 0%, 25%); 
+padding: 0px; 
+margin: 0px; 
+overflow: hidden; 
+} 
+.navbar a{ 
+color: white; 
+text-decoration: none; 
+padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+.navbar li{
+    float: left;
+}
+    </style>
+<body>
+
+     <h1>Welcome to Evangelista School of Wisdom</h1>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Calculate.html">Grade Calculator</a></li>
+            <li><a href="products.html">Clubs</a></li>
+        </ul>
+    </nav>
+
+    <div id="display">
+    <h1>Student Grade Calculator</h1>
+
+    <input id="English" type="number" placeholder="English">
+    <input id="Math" type="number" placeholder="Math">
+    <input id="Science" type="number" placeholder="Science">
+    <input id="SocialStudies" type="number" placeholder="SocialStuides">
+    <input id="Filipino" type="number" placeholder="Filipino">
+    <input id="Pe" type="number" placeholder="PE">
+
+    <button py-click="calculate_grade">Calculate</button>
+
+    </div>
+    <py-script src="main.py"></py-script>
+
+
+    <link rel="stylesheet" href="styles.css">
+    
+</body>
+</html>
